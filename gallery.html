@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><title>Gallery</title><link href="style.css" rel="stylesheet"/><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head><body>
+<!-- Slider main container -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <!-- more slides... -->
+  </div>
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <!-- Scrollbar (optional) -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<main><h1>Gallery</h1><video class="product-video" controls="True"><source src="intelights_new-panel-shaded.mp4" type="video/mp4"/></video><video class="product-video" controls="True"><source src="TFL_GIF.mp4" type="video/mp4"/></video></main><img src="box2.jpg"/><img src="IMG_20190806_173636.jpg"/><img src="WhatsApp Image 2020-01-22 at 9.44.36 AM.jpeg"/><img src="IMG_20190802_165803.jpg"/><img src="IMG_20190802_170007.jpg"/><img src="3895aef1-6efc-4dbf-85ac-e315f3c19eab.jpg"/><img src="a2fb84d3-d7c0-446d-8cf5-e9705be2e75d.jpg"/><img src="DSC00198.JPG"/><img src="Hackathon (3).JPG"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+</body></html>

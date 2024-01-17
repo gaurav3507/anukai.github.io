@@ -1,0 +1,118 @@
+
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply a full height layout with Flexbox */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style the body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Style the header with primary color */
+header {
+    background-color: #004a99;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo styles */
+header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #00afef;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #004a99;
+    background-color: white;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card-like design for sections */
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+    background-color: #004a99;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Watermark styles */
+.watermark {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.watermark img {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0;
+}
